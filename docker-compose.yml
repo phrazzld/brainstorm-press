@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  client:
+    build:
+      context: ./brainstorm-press-client
+    command: yarn start
+    volumes:
+      - .:/brainstorm-press-client/
+      - /brainstorm-press-client/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+  api:
+    build:
+      context: ./brainstorm-press-express-api
+    env_file: ./brainstorm-press-express-api/.env
+    command: yarn start
+    volumes:
+      - .:/brainstorm-press-express-api/
+      - /brainstorm-press-express-api/node_modules
+    ports:
+      - "4000:4000"

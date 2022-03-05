@@ -1,0 +1,6 @@
+[submodule "brainstorm-press-express-api"]
+	path = brainstorm-press-express-api
+	url = git://github.com/phrazzld/brainstorm-press-express-api.git
+[submodule "brainstorm-press-client"]
+	path = brainstorm-press-client
+	url = git://github.com/phrazzld/brainstorm-press-client.git
