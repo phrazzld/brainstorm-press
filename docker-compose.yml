@@ -8,7 +8,7 @@ services:
       - .:/brainstorm-press-client/
       - /brainstorm-press-client/node_modules
     ports:
-      - "3000:3000"
+      - 3000:3000
     depends_on:
       - api
   api:
@@ -20,4 +20,4 @@ services:
       - .:/brainstorm-press-express-api/
       - /brainstorm-press-express-api/node_modules
     ports:
-      - "4000:4000"
+      - 4000:4000
